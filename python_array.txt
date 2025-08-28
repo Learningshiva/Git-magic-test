@@ -154,4 +154,3 @@ print(alph)
 
 list = [10,"shiva",7.5,True]
 numbers = array.array('i',[1,2,3,4])
-hi
