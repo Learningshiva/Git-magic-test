@@ -1,0 +1,157 @@
+import array
+#Create and print an integer array using array.array('i') with values [1, 2, 3, 4, 5].
+#Access and print:
+##First element
+#Last element
+#Middle element of the array
+#import array
+numbers = array.array('i',[1,2,3,4,5]);
+first_element = numbers[0]
+last_element = numbers[-1]
+middle_element = numbers[len(numbers) // 2]
+print("First element", first_element)
+print("last element", last_element)
+print("middle element", middle_element)
+
+#Append a new element 10 to the array and print the updated array.
+#import array
+numbers = array.array('i',[1,2,3,4,5]);
+numbers.append(10)
+print(numbers)
+
+#Remove the element 3 from the array and print it.
+#import array
+numbers = array.array('i',[1,2,3,4,5,10]);
+numbers.pop(2)
+print(numbers)
+
+#Reverse the array and print it without using slicing.
+#import array
+numbers = array.array('i',[1,2,3,4,5,10]);
+numbers.reverse()
+print(numbers)
+
+#Given an array array('i', [10, 20, 30, 40, 50]):
+#Insert 25 at index 2
+#import array
+numbers = array.array('i',[10,20,30,40,50]);
+numbers.insert(2, 25)
+print(numbers)
+
+#Remove the element at index 4
+#import array
+numbers = array.array('i',[10,20,30,40,50]);
+numbers.pop(4)
+print(numbers)
+
+#Print the final array.
+#import array
+numbers = array.array('i',[10,20,30,40,50]);
+last_element = numbers[-1]
+print("last element", last_element)
+
+#Find the index of element 30 in an array.
+#import array
+numbers = array.array('i',[10,20,30,40,50]);
+idx = numbers.index(30)
+print("index of 30", idx)
+
+#Convert an array to a Python list without using loops.
+#import array
+numbers = array.array('i',[10,20,30,40,50]);
+num_list = list(numbers)
+print("Python list:", num_list)
+
+#Slice an array to get every second element.
+#import array
+numbers = array.array('i',[10,20,30,40,50,60]);
+# Slice to get every 2nd element
+every_second = numbers[::2] # ::2 → take all elements with a step of 2 (every second element).
+print("Every second element", every_second)
+
+#Check if a given value x exists in an array and print "Found" or "Not Found".
+#import array
+numbers = array.array('i',[10,20,30,40,50,60]);
+x = 30
+if x in numbers:
+    print("Found")
+else:
+    print("NOt Found")
+
+#Merge two sorted arrays into one sorted array using the array module.
+#import array
+alph = array.array('u',['u','a','c','b'])
+alpha = array.array('u',['h','i','g','j'])
+
+merge = array.array('u')
+merge.extend(alph)
+merge.extend(alpha)
+merge = array.array('u', sorted(merge))
+print("merge & sorted array: ", merge)
+
+#Given a Unicode array array('u', 'pythonrocks'), replace 'o' with '0'.
+unicode = array.array('u','pythonrocks')
+for i in range(len(unicode)):
+    if unicode[i] == 'o':
+        unicode[i] = '0'
+print(unicode)
+
+#Create an integer array and find the sum of all elements using sum().
+numbers = array.array('i',[1,2,3,4,5,6,7,8,9])
+total = sum(numbers)
+print("Total of numbers:", total)
+
+#Given an array array('i', [2, 4, 6, 8]), multiply every element by 3 using list comprehension.
+numbers = array.array('i',[2, 4, 6, 8])
+multiply = [x * 3 for x in numbers]
+print(multiply)
+
+#Create an array of integers from 1 to 10 and filter only even numbers.
+numbers = array.array('i',[1,2,3,4,5,6,7,8,9,10])
+even = [x%2 == 0 for x in numbers]
+print("Even no:",even)
+
+#Create an integer array of size 5 and display all its elements.
+numbers = array.array('i',[1,2,3,4,5])
+print(numbers)
+
+# Write a program to insert an element at the end of an array.
+numbers = array.array('i',[1,2,3,4,5])
+numbers.append(6)
+print(numbers)
+
+# Write a program to remove a specific element from an array.
+numbers = array.array('i',[1,2,3,4,5])
+numbers.pop(4)
+print(numbers)
+
+# Find the maximum and minimum elements in an array.
+numbers = array.array('i',[1,2,3,4,5])
+maximum = max(numbers)
+minimum = min(numbers)
+print(numbers)
+print(maximum)
+print(minimum)
+
+# Reverse an array without using slicing ([::-1]).
+numbers = array.array('i',[1,2,3,4,5])
+numbers.reverse()
+print(numbers)
+
+# Write a program to search for an element in an array (linear search).
+# numbers = array.array('i',[1,2,3,4,5,6,7,8,9,10])
+# x = 8
+
+# Write a program to sort an array in ascending order.
+alph = ['u','o','i','e','a']
+alph.sort()
+print(alph)
+
+# Demonstrate how array differs from a list in Python with an example.
+# In list can store mixed data type.
+# list = [int,"string",bool,etc]
+# In array can store data type, (i.g - 'i','u','f')
+
+list = [10,"shiva",7.5,True]
+numbers = array.array('i',[1,2,3,4])
+hi
